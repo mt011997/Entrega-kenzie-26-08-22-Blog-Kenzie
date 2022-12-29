@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/homePage.css">
+    <title>Blog Kenzie HomePage</title>
+</head>
+
+<body>
+    <header>
+        <div class="dataUser">
+
+        </div>
+        <button class="logout">Logout</button>
+    </header>
+
+    <main>
+        <div class="texto">
+            <form>
+                <textarea id="msg" name="msg" cols="30" rows="4" placeholder="No que está pensando?"></textarea>
+                <button class="postar">+</button>
+            </form>
+        </div>
+
+        <div class="container-posts">
+            <ul class="posts">
+
+            </ul>
+        </div>
+
+        <section class="modal__Edit hidden">
+            <div class="container__Modal__Edit">
+                <h2>Editar</h2>
+                <div class="container__txtArea">
+                    <form>
+                        <textarea name="msgEdit" id="msgEdit" cols="30" rows="10"></textarea>
+                        <button class="btnEnviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="modal__delete hidden">
+            <div class="container__modal__delete">
+                <h2>Deseja Deletar esse poster?</h2>
+                <button class="modal__button__delete">Deletar</button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+<script defer type="module" src="../script/HomePage.js"></script>
+
+</html>
